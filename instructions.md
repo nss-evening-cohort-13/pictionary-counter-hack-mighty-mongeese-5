@@ -98,6 +98,6 @@ hs -o setup/index.html
 - Allow the user to name the Pictionary counter
 - Remove the ability to allow negative numbers for scores
 
-## Strech Goal 3
+## Stretch Goal 3
 - Allow users to delete counters
 - Allow users to edit their team names
