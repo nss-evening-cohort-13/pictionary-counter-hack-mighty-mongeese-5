@@ -93,7 +93,7 @@ hs -o setup/index.html
 ## Stretch Goal 1
 - Have 2 Pictionary counters on the screen so that one user can keep track of two team's scores
 
-## Strech Goal 2
+## Stretch Goal 2
 - Add a button that allows users to add as many Pictionary counters as they would like for the amount of teams that may want to play
 - Allow the user to name the Pictionary counter
 - Remove the ability to allow negative numbers for scores
