@@ -36,8 +36,19 @@ const buttonEvent = () => {
     document.querySelector('#increase').addEventListener('click', increaseCounter);
 }
 
+const changeColor = () => {
+    if (counterValue === 0) {
+        document.querySelector('.counter--value').style.color = 'black';
+    } else if (counterValue < 0) {
+        document.querySelector('.counter--value').style.color = 'red';
+    } else if (counterValue > 0) {
+        document.querySelector('.counter--value').style.color = 'green';
+    }
+}
+
 const init = () => {
     buildCounter();
+    changeColor();
     buttonEvent();
 }
 

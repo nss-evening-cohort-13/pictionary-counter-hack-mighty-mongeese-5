@@ -23,10 +23,19 @@ body {
 
 .counter--header {
     font-size: 70px;
-    padding: 2%;
+    text-decoration: underline;
 }
 
 .counter--value {
-    
     font-size: 100px;
+}
+
+.counter--buttons {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter--buttons button {
+    background: none;
 }
