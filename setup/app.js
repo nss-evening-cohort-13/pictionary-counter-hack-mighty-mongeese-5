@@ -4,7 +4,7 @@ let counterValue = 0;
 
 const buildCounter = () => {
   let domString = `<div class="counter--card">
-                        <h3>Counter</h3>
+                        <h3 class="counter--header">Counter</h3>
                         <div class="counter--value">${counterValue}</div>
                         <div class="counter--buttons">
                             <button id="decrease">Decrease</button>
@@ -23,11 +23,11 @@ const printToDom = (divId, textToPrint) => {
 
 const changeColor = () => {
     if (counterValue === 0) {
-        document.querySelector('.counter--value').style.color = 'black';
+        document.querySelector('.counter--value').style.color = '#DAA588';
     } else if (counterValue < 0) {
-        document.querySelector('.counter--value').style.color = 'red';
+        document.querySelector('.counter--value').style.color = '#F56960';
     } else if (counterValue > 0) {
-        document.querySelector('.counter--value').style.color = 'green';
+        document.querySelector('.counter--value').style.color = '#9DCBBA';
     }
 }
 
@@ -57,6 +57,5 @@ const init = () => {
     changeColor();
     buttonEvent();
 }
-
 
 init();
