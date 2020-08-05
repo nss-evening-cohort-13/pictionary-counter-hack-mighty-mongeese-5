@@ -38,11 +38,11 @@ const buttonEvent = () => {
 
 const changeColor = () => {
     if (counterValue === 0) {
-        document.querySelector('.counter--value').style.color = 'black';
+        document.querySelector('.counter--value').style.color = '#DAA588';
     } else if (counterValue < 0) {
-        document.querySelector('.counter--value').style.color = 'red';
+        document.querySelector('.counter--value').style.color = '#F56960';
     } else if (counterValue > 0) {
-        document.querySelector('.counter--value').style.color = 'green';
+        document.querySelector('.counter--value').style.color = '#9DCBBA';
     }
 }
 
