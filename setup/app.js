@@ -21,19 +21,19 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-const decreaseCounter = () => {
-    
-};
-
-
-
 const increaseCounter = () => {
     counterValue += 1;
     init();
 }
 
+const resetCounter = () => {
+    counterValue = 0;
+    init();
+}
+
 const buttonEvent = () => {
     document.querySelector('#increase').addEventListener('click', increaseCounter);
+    document.querySelector('#reset').addEventListener('click', resetCounter);
 }
 
 const init = () => {
