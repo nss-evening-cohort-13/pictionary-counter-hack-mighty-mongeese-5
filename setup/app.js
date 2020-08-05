@@ -21,21 +21,6 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-const decreaseCounter = () => {
-    
-};
-
-
-
-const increaseCounter = () => {
-    counterValue += 1;
-    init();
-}
-
-const buttonEvent = () => {
-    document.querySelector('#increase').addEventListener('click', increaseCounter);
-}
-
 const changeColor = () => {
     if (counterValue === 0) {
         document.querySelector('.counter--value').style.color = '#DAA588';
@@ -46,11 +31,31 @@ const changeColor = () => {
     }
 }
 
+const decreaseCounter = () => {
+    counterValue -= 1;
+    init();
+}
+
+const increaseCounter = () => {
+    counterValue += 1;
+    init();
+}
+
+const resetCounter = () => {
+    counterValue = 0;
+    init();
+}
+
+const buttonEvent = () => {
+    document.querySelector('#decrease').addEventListener('click', decreaseCounter);
+    document.querySelector('#increase').addEventListener('click', increaseCounter);
+    document.querySelector('#reset').addEventListener('click', resetCounter);
+}
+
 const init = () => {
     buildCounter();
     changeColor();
     buttonEvent();
 }
-
 
 init();
