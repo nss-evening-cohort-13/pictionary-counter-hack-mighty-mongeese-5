@@ -4,7 +4,7 @@ let counterValue = 0;
 
 const buildCounter = () => {
   let domString = `<div class="counter--card">
-                        <h3>Counter</h3>
+                        <h3 class="counter--header">Counter</h3>
                         <div class="counter--value">${counterValue}</div>
                         <div class="counter--buttons">
                             <button id="decrease">Decrease</button>
