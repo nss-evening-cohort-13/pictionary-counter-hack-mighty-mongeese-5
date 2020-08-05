@@ -41,9 +41,15 @@ const increaseCounter = () => {
     init();
 }
 
+const resetCounter = () => {
+    counterValue = 0;
+    init();
+}
+
 const buttonEvent = () => {
     document.querySelector('#decrease').addEventListener('click', decreaseCounter);
     document.querySelector('#increase').addEventListener('click', increaseCounter);
+    document.querySelector('#reset').addEventListener('click', resetCounter);
 }
 
 const init = () => {
