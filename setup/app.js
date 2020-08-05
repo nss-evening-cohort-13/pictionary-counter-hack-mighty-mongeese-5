@@ -21,6 +21,21 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
+const changeColor = () => {
+    if (counterValue === 0) {
+        document.querySelector('.counter--value').style.color = 'black';
+    } else if (counterValue < 0) {
+        document.querySelector('.counter--value').style.color = 'red';
+    } else if (counterValue > 0) {
+        document.querySelector('.counter--value').style.color = 'green';
+    }
+}
+
+const decreaseCounter = () => {
+    counterValue -= 1;
+    init();
+}
+
 const increaseCounter = () => {
     counterValue += 1;
     init();
@@ -32,12 +47,14 @@ const resetCounter = () => {
 }
 
 const buttonEvent = () => {
+    document.querySelector('#decrease').addEventListener('click', decreaseCounter);
     document.querySelector('#increase').addEventListener('click', increaseCounter);
     document.querySelector('#reset').addEventListener('click', resetCounter);
 }
 
 const init = () => {
     buildCounter();
+    changeColor();
     buttonEvent();
 }
 
