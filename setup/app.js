@@ -25,8 +25,21 @@ const decreaseCounter = () => {
     
 };
 
+
+
+const increaseCounter = () => {
+    counterValue += 1;
+    init();
+}
+
+const buttonEvent = () => {
+    document.querySelector('#increase').addEventListener('click', increaseCounter);
+}
+
 const init = () => {
-  buildCounter();
-};
+    buildCounter();
+    buttonEvent();
+}
+
 
 init();
